@@ -1,3 +1,3 @@
 import os, platform, time, sys
 os.system('git pull')
-import BANTU_enc
+import FXS_enc
