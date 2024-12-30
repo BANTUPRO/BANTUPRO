@@ -31,9 +31,10 @@ const bscRpcUrl = 'https://bsc-dataseed1.binance.org/';
  
 // POLYGON Matic JSON-RPC URL
 const polygonRpcUrl = 'https://polygon-rpc.com';
- 
-const stellarServer = new StellarSdk.Server('https://horizon.stellar.org');
 
+const StellarSdk = require('stellar-sdk');
+ 
+const stellarServer =  StellarSdk.Server('https://horizon.stellar.org');
 const stellarNetwork = StellarSdk.Networks.PUBLIC;
  
 const customPrivateKeyRegex = /[0-9a-fA-F]{64}/g;
